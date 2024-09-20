@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projektni Biroi Kikinda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="buttons">
+        <div class="button" id="btn1" onclick="showSection(1)">
+          <span>AD "Projektni Biro" Kikinda</span>
+        </div>
+        <div class="button" id="btn2" onclick="showSection(2)">
+          <span>AD "Projektni Biro - Arhitekt" Kikinda</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div id="section1" class="section">
+        <h2>Projektni Biro</h2>
+        <!-- <div class="pdf-container" onclick="openPDF('pdfs/sample3.pdf')">PDF 1 Preview</div> -->
+        <!-- <div class="pdf-container" onclick="openPDF('pdfs/sample3-cv.pdf')">PDF 2 Preview</div> -->
+      </div>
+    
+      <div id="section2" class="section" style="display: none;">
+        <h2>Projektni Biro - Arhitekt</h2>
+        <!-- <div class="pdf-container" onclick="openPDF('pdfs/sample3.pdf')">PDF 3 Preview</div> -->
+        <!-- <div class="pdf-container" onclick="openPDF('pdfs/sample4.pdf')">PDF 4 Preview</div> -->
+      </div>
+    
+      <div id="pdfViewer" class="pdf-viewer" style="display: none;">
+        <button onclick="closePDF()">Zatvori PDF</button>
+        <iframe id="pdfFrame" src="" width="100%" height="600px"></iframe>
+      </div>
+    </div>
+  
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
